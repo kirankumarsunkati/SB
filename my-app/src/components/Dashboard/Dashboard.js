@@ -1,9 +1,10 @@
 import React from 'react';
 import sb from './../../Images/SmartBill.jpeg';
 import Navs from './Navs.js';
+import {Link} from 'react-router-dom';
 class Dashboard extends React.Component{
 render(){
-  this.state =['Summary','Users','Agents','Products'];
+  this.state =['Summar2y','Users','Agents','Products'];
   return(
   <div className="dashboardWrapper">
         <div className="row topWrapper">
@@ -15,12 +16,14 @@ render(){
             <div className="col-3">
             </div>
         </div>
-        
+
         <div className="row dashboardContainer">
               {this.state.map( (name,key) => {
-                return <Navs key={key} value={name}/>
+                {{console.log(this.props);}}
+                return <Link to={this.props.match.path.split('/')[1]+'/'+name} key={key}><Navs  value={name}/></Link>
               })}
         </div>
+
   </div>
   );
 
