@@ -12,7 +12,7 @@ class Test extends React.Component{
     console.log('onkeyup', this.otp.value);
     let password = this.otp.value;
       if(password.length === 4){
-          this.props.history.push("/Dashboard");
+          this.props.history.push("/Dashboard/Summary");
       }
   }
 
@@ -21,11 +21,11 @@ render(){
     return (
       <div className="loginWrapper">
             <div className="row">
-            <p className="col-3"></p>
-            <p className="logoWrapper col-6">
+            <p className="col-1"></p>
+            <p className="logoWrapper col-3">
                 <img src={sb} alt="sb" className="sblogo"/>
             </p>
-            <p className="col-3"></p>
+            <p className="col-8"></p>
             </div>
             <div className="row">
             <p className="col-4"></p>

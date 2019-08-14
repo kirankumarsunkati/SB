@@ -22,7 +22,7 @@ render(){
           <div className="row dashboardContainer">
                 {this.state.map( (name,key) => {
                   {{console.log(this.props,this.props.match.path.split('/'));}}
-                  return <Link to={name} key={key}><Navs  value={name}/></Link>
+                  return <Link  className="col-3" to={name} key={key}><Navs  value={name}/></Link>
                 })}
           </div>
           <Row name={'Collections'} value={'23423'} isHeader={'true'}></Row>
