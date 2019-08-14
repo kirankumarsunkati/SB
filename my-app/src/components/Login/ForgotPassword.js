@@ -24,7 +24,7 @@ render(){
                     <input type="password" className="form-control userOtp" id="userOtp"  ref = {(input) => { this.otp = input; } } placeholder="Please Enter 4 digit OTP" onKeyUp={this.submitForm}/>
                 </div>
 
-                <button type="submit" className="btn btn-primary">Next</button>
+                <button type="submit" className="btn btn-primary bottom">Next</button>
                 </form>
             </div>
 

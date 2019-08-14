@@ -54,3 +54,34 @@ p{
     src: url('fonts/SourceSansPro-Light.otf');
     font-weight: 300;
 }
+.borderTop{
+  border-bottom: 1px solid #000;
+}
+.header{
+  font-size: 22px;
+  height: 50px;
+  line-height: 50px;
+}
+.dashboardContainer{
+  border-top:1px solid #000;
+  border-bottom:1px solid #000;
+  height: 45px;
+  line-height: 40px;
+}
+.nonHeader{
+  height: 40px;
+  line-height: 40px;
+}
+.dashboardContainer a{
+  color: #000;
+}
+.noPadding{
+  padding: 0!important;
+}
+.dashboardWrapper .bottom{
+  position: absolute;
+    bottom: 0;
+    margin: 0 6vh;
+    display: block;
+    width: 40vh;
+}

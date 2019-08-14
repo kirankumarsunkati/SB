@@ -11,7 +11,7 @@ import Summary from './components/Dashboard/Summary.js';
 import Users from './components/Dashboard/Users.js';
 import Agents from './components/Dashboard/Agents.js';
 import Products from './components/Dashboard/Products.js';
-
+import AddUser from './components/Dashboard/AddUser.js'
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
                   <Route path='/Dashboard/Users' exact strict component={Users}/>
                   <Route path='/Dashboard/Agents' exact strict component={Agents}/>
                   <Route path='/Dashboard/Products' exact strict component={Products}/>
+                  <Route path='/Dashboard/addUser' exact strict component={AddUser}/>
             <Route path='/User' component={Test}/>
             </div>
         </Router>

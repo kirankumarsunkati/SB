@@ -22,13 +22,13 @@ render(){
           <div className="row dashboardContainer">
                 {this.state.map( (name,key) => {
                   {{console.log(this.props,this.props.match.path.split('/'));}}
-                  return <Link  className="col-3" to={name} key={key}><Navs  value={name}/></Link>
+                  return <Link to={name} key={key} className="active"><Navs  value={name}/></Link>
                 })}
           </div>
-          <Row name={'Collections'} value={'23423'} isHeader={'true'}></Row>
+          <Row name={'Collections'} value={'July 2019'} isHeader={'true'}></Row>
           <Row name={'Monthly Total'} value={'367000'}></Row>
           <Row name={'Pending Amount'} value={'23423'}></Row>
-          <Row name={'Subscriptions'} value={'23423'} isHeader={'true'}></Row>
+          <Row name={'Subscriptions'} value={'July 2019'} isHeader={'true'}></Row>
           <Row name={'Total customer'} value={'23423'}></Row>
           <Row name={'Total Subsciptions'} value={'23423'}></Row>
 

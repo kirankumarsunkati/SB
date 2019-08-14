@@ -21,11 +21,11 @@ render(){
     return (
       <div className="loginWrapper">
             <div className="row">
-            <p className="col-1"></p>
-            <p className="logoWrapper col-3">
+            <p className="col-2"></p>
+            <p className="logoWrapper col-8">
                 <img src={sb} alt="sb" className="sblogo"/>
             </p>
-            <p className="col-8"></p>
+            <p className="col-2"></p>
             </div>
             <div className="row">
             <p className="col-4"></p>
