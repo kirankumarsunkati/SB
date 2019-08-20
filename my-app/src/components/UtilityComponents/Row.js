@@ -4,9 +4,11 @@ class Row extends React.Component{
 render(){
   const {name} = this.props;
   const {value} = this.props;
+  const {noBorder} = this.props;
   let headerClass = this.props.isHeader === "true" ? 'header' : 'nonHeader';
+  let borderClass =  this.props.noBorder === "true" ? "noBorder" : "border";
   let classNameValue ="row borderTop";
-  classNameValue =  classNameValue+' '+headerClass;
+  classNameValue =  classNameValue+' '+headerClass+ ' '+borderClass;
   return(
 
     <div className={classNameValue}>

@@ -85,3 +85,6 @@ p{
     display: block;
     width: 40vh;
 }
+.noBorder{
+  border:none;
+}

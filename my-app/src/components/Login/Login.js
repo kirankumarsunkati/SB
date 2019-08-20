@@ -35,13 +35,13 @@ render(){
             <div className="formWrapper">
                 <form name="userLoginForm" id="userLogin">
                 <div className="form-group">
-                    <label className="userOtp">Enter OTP</label>
-                    <input type="password" className="form-control userOtp" id="userOtp"  ref = {(input) => { this.otp = input; } } placeholder="Please Enter 4 digit OTP" onKeyUp={this.submitForm}/>
+                    <label className="userOtp">Login</label>
+                    <input type="password" className="form-control userOtp" id="userOtp"  ref = {(input) => { this.otp = input; } } placeholder="Please Enter 4 digit PIN" onKeyUp={this.submitForm}/>
                 </div>
 
                 <div className="loginFormFooter row">
-                    <Link className="col-8 text-left" to="/RegisterUser">New User, Register Here</Link>
-                    <Link className="col-4 text-Right" to="/ForgotPassword">Forgot Password</Link>
+                    <Link className="col-7 text-left" to="/RegisterUser">New User, Register Here</Link>
+                    <Link className="col-5 text-Right" to="/ForgotPassword">Forgot Password</Link>
                 </div>
                 </form>
             </div>

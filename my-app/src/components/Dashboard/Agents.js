@@ -23,13 +23,26 @@ render(){
                   return <Link to={name} key={key} className="active"><Navs  value={name}/></Link>
                 })}
           </div>
-          <Row name={'Collections'} value={'July 2019'} isHeader={'true'}></Row>
-          <Row name={'Monthly Total'} value={'367000'}></Row>
-          <Row name={'Pending Amount'} value={'23423'}></Row>
-          <Row name={'Subscriptions'} value={'July 2019'} isHeader={'true'}></Row>
-          <Row name={'Total customer'} value={'23423'}></Row>
-          <Row name={'Total Subsciptions'} value={'23423'}></Row>
+          <div className="row borderTop">
+              <div className="col-6 text-left">
+                  Area
+              </div>
+              <div className="col-6 text-right noPadding">
+                  <select class="custom-select">
+                    <option selected value="Area1">Area 1</option>
+                    <option value="Area2">Area 2</option>
+                    <option value="Area3">Area 3</option>
+                    <option value="Area4">Area 4</option>
+                    <option value="Area5">Area 5</option>
+                  </select>
+              </div>
+          </div>
+          <Row name={'Raj Kumar1'} value={'3000'} noBorder={'true'}></Row>
+          <Row name={'Raj Kumar2'} value={'2019'} noBorder={'true'}></Row>
+          <Row name={'Raj Kumar3'} value={'0'} noBorder={'true'}></Row>
+          <Row name={'Raj Kumar4'} value={'200'} noBorder={'true'}></Row>
 
+          <Link to={'addUser'}><button type="submit" className="btn btn-primary bottom">Add User</button></Link>
 
       </div>
   );
