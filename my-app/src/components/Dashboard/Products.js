@@ -10,18 +10,17 @@ render(){
   return(
     <div className="dashboardWrapper">
           <div className="row topWrapper">
-              <div className="col-3">
+              <div className="col-1">
               </div>
-              <div className="col-6">
-                  {/*<img src={sb} alt="sb" className="sblogo"/>*/}
+              <div className="col-10">
+                <Link to="/Summary"><img src={sb} alt="sb" className="sblogo"/></Link>
               </div>
-              <div className="col-3">
+              <div className="col-1">
               </div>
           </div>
           <div className="row dashboardContainer">
-                {this.state.map( (name,key) => {
-                  {{console.log(this.props,this.props.match.path.split('/'));}}
-                  return <Link to={name} key={key} className="active"><Navs  value={name}/></Link>
+                {this.state.map((name,key) => {
+                  return <Link to={name} key={name+'_'+key} id={name+'_'+key} className="active col-3"><Navs  value={name}/></Link>
                 })}
           </div>
           <Row name={'Collections'} value={'July 2019'} isHeader={'true'}></Row>
@@ -30,11 +29,8 @@ render(){
           <Row name={'Subscriptions'} value={'July 2019'} isHeader={'true'}></Row>
           <Row name={'Total customer'} value={'23423'}></Row>
           <Row name={'Total Subsciptions'} value={'23423'}></Row>
-
-
       </div>
   );
-
 }
 }
 export default Products;
