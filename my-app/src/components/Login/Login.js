@@ -23,7 +23,7 @@ render(){
             <div className="row">
             <p className="col-2"></p>
             <p className="logoWrapper col-8">
-                <img src={sb} alt="sb" className="sblogo"/>
+                {/*<img src={sb} alt="sb" className="sblogo"/>*/}
             </p>
             <p className="col-2"></p>
             </div>
