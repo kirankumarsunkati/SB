@@ -23,57 +23,94 @@ render(){
             return <Link to={name} key={key} className="active col-3"><Navs  value={name}/></Link>
           })}
     </div>
-      <form class="form-inline">
-
-        <div class="form-group row">
-            <label for="agentName" class="col-5 col-form-label col-form-label-sm">Name</label>
-            <div class="col-7">
-              <input type="text" class="form-control form-control-sm" id="agentName" placeholder="col-form-label-sm"/>
-            </div>
+      <form class="">
+      <div className="form-group row">
+          <label className="userName col-4">Name</label>
+          <input type="text" className="form-control userName col-7" id="userName"  ref = {(input) => { this.name = input; } }/>
+          <label className="col-1"></label>
       </div>
-      <div class="form-group row">
-          <label for="mobileNumber" class="col-5 col-form-label col-form-label-sm">Mobile Number</label>
-          <div class="col-7">
-            <input type="number" class="form-control form-control-sm" id="mobileNumber" placeholder="col-form-label-sm"/>
-          </div>
+      <div className="form-group row">
+          <label className="mobileNumber col-4">Mobile Number</label>
+          <input type="text" className="form-control mobileNumber col-7" id="mobileNumber"  ref = {(input) => { this.mobileNumber = input; } }/>
+          <label className="col-1"></label>
       </div>
-      <div class="form-group row">
-          <label for="userEmail" class="col-5 col-form-label col-form-label-sm">Area</label>
-          <div class="col-7">
-          <select className="custom-select">
+      <div className="form-group row">
+          <label className="Email col-4">Email</label>
+          <input type="text" className="form-control Email col-7" id="Email"  ref = {(input) => { this.Email = input; } }/>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="Address col-4">Address</label>
+          <input type="text" className="form-control Address col-7" id="Address"  ref = {(input) => { this.Address = input; } }/>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="Address col-4">Area</label>
+          <select className="custom-select col-7">
             <option defaultValue="Area1" value="Area1">Area 1</option>
             <option value="Area2">Area 2</option>
             <option value="Area3">Area 3</option>
             <option value="Area4">Area 4</option>
             <option value="Area5">Area 5</option>
           </select>
-          </div>
+          <label className="col-1"></label>
       </div>
-      <div class="form-group row">
-      <label for="userEmail" className="col-5 col-form-label col-form-label-sm">Permissions</label>
-      <div className="col-7">
-          <input className="form-check-input" type="checkbox" id="disabledFieldsetCheck"/>
-          <label className="form-check-label" for="disabledFieldsetCheck">
-    Cant check this
-  </label>
-  </div><div className="col-7">
-      <input className="form-check-input" type="checkbox" id="disabledFieldsetCheck"/>
-      <label className="form-check-label" for="disabledFieldsetCheck">
-Cant check this
-</label>
-</div><div className="col-7">
-    <input className="form-check-input" type="checkbox" id="disabledFieldsetCheck"/>
-    <label className="form-check-label" for="disabledFieldsetCheck">
-Cant check this
-</label>
-</div><div className="col-7">
-    <input className="form-check-input" type="checkbox" id="disabledFieldsetCheck"/>
-    <label className="form-check-label" for="disabledFieldsetCheck">
-Cant check this
-</label>
-</div>
+      <div className="form-group row">
+          <label className="Agent col-4">Agent</label>
+          <select className="custom-select col-7">
+            <option defaultValue="Agent1" value="Agent1">Agent 1</option>
+            <option value="Agent2">Agent 2</option>
+            <option value="Agent3">Agent 3</option>
+            <option value="Agent4">Agent 4</option>
+            <option value="Agent5">Agent 5</option>
+          </select>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="startDate col-4">Start Date</label>
+          <input type="text" className="startDate col-7"></input>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="openingBalance col-4">Opening Balance</label>
+          <input type="radio" className="startDate col-1"></input>
+          <label className="oustanding col-2"> Outstanding</label>
+          <input type="radio" className="startDate col-1"></input>
+          <label className="oustanding col-2"> Advance</label>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="billType col-4">Bill Type</label>
+          <input type="radio" className="startDate col-1"></input>
+          <label className="prepaid col-2"> Prepaid</label>
+          <input type="radio" className="startDate col-1"></input>
+          <label className="postpaid col-2"> Postpaid</label>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="product col-4">Product</label>
+          <select className="custom-select col-7">
+            <option defaultValue="Andhara jyothy" value="Andhara jyothy">Andhara Jyothy</option>
+            <option value="Agent2">Agent 2</option>
+            <option value="Agent3">Agent 3</option>
+            <option value="Agent4">Agent 4</option>
+            <option value="Agent5">Agent 5</option>
+          </select>
+          <label className="col-1"></label>
+      </div>
+      <div className="form-group row">
+          <label className="auantity col-4">Quantity</label>
+          <select className="custom-select col-7">
+            <option defaultValue="1" value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <label className="col-1"></label>
+      </div>
+      <button type="submit" className="btn btn-primary bottom">Submit</button>
 
-          </div>
       </form>
       </div>
   );
