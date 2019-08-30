@@ -7,16 +7,8 @@ import {Link} from 'react-router-dom';
 import Row from './../UtilityComponents/Row.js';
 import Button from './../UtilityComponents/Button.js';
 
-class ProductsList extends React.Component{
-  routeToAddProdcuts = () => {
-    this.props.history.push("/Dashboard/AddProducts");
-
-  }
-  returnSubRoutes = () =>{
-    this.props.history.push("/Dashboard/ProductsList");
-  }
+class Products extends React.Component{
 render(){
-
     this.state =['Summary','Users','Agents','Products'];
   return(
     <div className="dashboardWrapper">
@@ -34,13 +26,23 @@ render(){
                   return <Link to={name} key={name+'_'+key} id={name+'_'+key} className="active col-3"><Navs  value={name}/></Link>
                 })}
           </div>
-          <span onClick={this.returnSubRoutes}><Row name={'Andhra Jyothi'} value={'500'} noBorder={'true'}></Row></span>
-          <span onClick={this.returnSubRoutes}><Row name={'Times of india'} value={'300'} noBorder={'true'}></Row></span>
-          <span onClick={this.returnSubRoutes}><Row name={'Eenadu'} value={'800'} noBorder={'true'}></Row></span>
-          <div className="row clearBoth bottom">
+          <Row name={'Name'} value={'Andhra Jyothi'} noBorder={'true'}></Row>
+          <Row name={'Subsciptions Type'} value={'Daily'} noBorder={'true'}></Row>
+          <Row name={'Price'} noBorder={'true'}></Row>
+          <Row name={'Monday'} value={'3'} noBorder={'true'}></Row>
+          <Row name={'Tuesday'} value={'3'} noBorder={'true'}></Row>
+          <Row name={'Wednesday'} value={'3'} noBorder={'true'}></Row>
+          <Row name={'Thrusday'} value={'3'} noBorder={'true'}></Row>
+          <Row name={'Friday'} value={'3'} noBorder={'true'}></Row>
+          <Row name={'Saturday'} value={'3'} noBorder={'true'}></Row>
+          <Row name={'Sunday'} value={'3'} noBorder={'true'}></Row>
+          <div className="row clearBoth">
               <div className="col-2"></div>
-              <div className="col-8">
-              <button type="submit" className="btn btn-primary" onClick={this.routeToAddProdcuts}>Add Product</button>
+              <div className="col-4">
+              <button type="submit" className="btn btn-primary">Edit</button>
+              </div>
+              <div className="col-4">
+              <button type="submit" className="btn btn-primary">Delete</button>
               </div>
               <div className="col-2"></div>
           </div>
@@ -49,4 +51,4 @@ render(){
   );
 }
 }
-export default ProductsList;
+export default Products;

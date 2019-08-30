@@ -10,12 +10,14 @@ render(){
             <div className="row">
             <p className="col-1"></p>
             <p className="logoWrapper col-3">
-                {/*<img src={sb} alt="sb" className="sblogo"/>*/}
+                <img src={sb} alt="sb" className="sblogo"/>
             </p>
             <p className="col-8"></p>
             </div>
             <div className="row">
-            <p className="col-12 text-center applyBorder helpTextMainWrapper"><HelpText msg={forgotPassword}/></p>
+                <p className="col-2"></p>
+                <p className="col-8 text-center applyBorder helpTextWrapperMain"><HelpText msg={forgotPassword}/></p>
+                <p className="col-2"></p>
             </div>
             <div className="formWrapper">
                 <form name="forGotPassword" id="forGotPassword">

@@ -1,13 +1,21 @@
 import React from 'react';
 
 class Button extends React.Component{
+	returnDomValue = () => {
+		console.log(this.props.ButtonNames);
+
+	}
 render(){
 	const {Text} = this.props;
 	const {linkTo} = this.props;
+	const {ButtonNames} = this.props;
+	let name = '';
   return(
-			<div>{Text} </div>
+			<div>
+			<span>{Text}</span>
+			</div>
   );
 
 }
 }
-export default Test;
+export default Button;

@@ -6,7 +6,7 @@ import sb from './../../Images/SmartBill.jpeg';
 class Test extends React.Component{
   navigateToNewUser = () => {
         console.log('asdf');
-        return <Redirect to ='/RegisterUser'/>
+        return <Redirect to ='/UserMobileNumberRegistration'/>
   }
   submitForm = () => {
     console.log('onkeyup', this.otp.value);
@@ -23,7 +23,7 @@ render(){
             <div className="row">
             <p className="col-2"></p>
             <p className="logoWrapper col-8">
-                {/*<img src={sb} alt="sb" className="sblogo"/>*/}
+                <img src={sb} alt="sb" className="sblogo"/>
             </p>
             <p className="col-2"></p>
             </div>
@@ -35,13 +35,13 @@ render(){
             <div className="formWrapper">
                 <form name="userLoginForm" id="userLogin">
                 <div className="form-group">
-                    <label className="userOtp">Login</label>
+                    <label className="userOtp userOTPLabel">Login</label>
                     <input type="password" className="form-control userOtp" id="userOtp"  ref = {(input) => { this.otp = input; } } placeholder="Please Enter 4 digit PIN" onKeyUp={this.submitForm}/>
                 </div>
 
                 <div className="loginFormFooter row">
-                    <Link className="col-7 text-left" to="/RegisterUser">New User, Register Here</Link>
-                    <Link className="col-5 text-Right" to="/ForgotPassword">Forgot Password</Link>
+                    <Link className="col-8 text-left" to="/UserMobileNumberRegistration">New User, Register Here</Link>
+                    <Link className="col-4 text-Right" to="/ForgotPassword">Forgot PIN?</Link>
                 </div>
                 </form>
             </div>

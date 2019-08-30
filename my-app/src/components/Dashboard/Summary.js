@@ -14,7 +14,7 @@ render(){
               <div className="col-1">
               </div>
               <div className="col-10">
-                  <Link to="/Summary"><img src={sb} alt="sb" className="sblogo"/></Link>
+                  <img src={sb} alt="sb" className="sblogo"/>
               </div>
               <div className="col-1">
               </div>

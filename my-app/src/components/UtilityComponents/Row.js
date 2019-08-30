@@ -10,7 +10,6 @@ render(){
   let classNameValue ="row borderTop";
   classNameValue =  classNameValue+' '+headerClass+ ' '+borderClass;
   return(
-
     <div className={classNameValue}>
         <div className="col-6 text-left">
           {name}

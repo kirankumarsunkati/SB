@@ -50,8 +50,15 @@ render(){
           <Row name={'Rajeev Kuma5'} value={'0'}></Row>
           <Row name={'Total Pening'} value={'1500'}></Row>
 
-
-          <Link to={'addUser'}><button type="submit" className="btn btn-primary bottom">Add User</button></Link>
+          <div className="row clearBoth bottom">
+              <div className="col-2"></div>
+              <Link to={'addUser'}>
+              <div className="col-8">
+              <button type="submit" className="btn btn-primary" onClick={this.routeToAddProdcuts}>Add User</button>
+              </div>
+              </Link>
+              <div className="col-2"></div>
+          </div>
       </div>
   );
 }

@@ -13,7 +13,7 @@ render(){
               <div className="col-1">
               </div>
               <div className="col-10">
-                <Link to="/Summary"><img src={sb} alt="sb" className="sblogo"/></Link>
+                <img src={sb} alt="sb" className="sblogo"/>
                </div>
               <div className="col-1">
               </div>
@@ -42,8 +42,15 @@ render(){
           <Row name={'Raj Kumar3'} value={'0'} noBorder={'true'}></Row>
           <Row name={'Raj Kumar4'} value={'200'} noBorder={'true'}></Row>
 
-          <Link to={'addUser'}><button type="submit" className="btn btn-primary bottom">Add Agent</button></Link>
-
+          <div className="row clearBoth bottom">
+              <div className="col-2"></div>
+              <Link to={'addUser'}>
+              <div className="col-8">
+              <button type="submit" className="btn btn-primary">Add Agent</button>
+              </div>
+              </Link>
+              <div className="col-2"></div>
+          </div>
       </div>
   );
 

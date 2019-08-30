@@ -23,7 +23,7 @@ render(){
             return <Link to={name} key={key} className="active col-3"><Navs  value={name}/></Link>
           })}
     </div>
-      <form class="">
+      <form className="addUserFormWrapper">
       <div className="form-group row">
           <label className="userName col-4">Name</label>
           <input type="text" className="form-control userName col-7" id="userName"  ref = {(input) => { this.name = input; } }/>

@@ -1,6 +1,41 @@
-a,p{
+#root a,#root p{
   font-family: SourceSansPro-Bold;
+  color:#000;
+  padding: 0 10px;
+  margin: 0;
 }
+#root .form-control{
+  border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
+#userLogin .form-group{
+  margin-bottom: 2px
+}
+#userLogin #userOtp{
+  margin: 3vh auto 0 auto;
+}
+#userLogin .userOTPLabel{
+  margin: 3vh auto 0 auto;
+}
+#root{
+  max-width: 340px!important;
+  margin: 0 auto;
+  border: 1px solid #ced4da;
+  height: 100%;
+}
+#root .helpTextWrapperMain{
+  background-color: #ced4da;
+  font-family: SourceSansProExtraLight;
+  font-size: 12px;
+  padding: 4px 5px;
+}
+a.col-8.text-left{
+  padding: 0 0 0 15px;
+}
+ a.col-4.text-Right{
+   padding: 0 5px 0 0;
+ }
 .App {
   text-align: center;
 }
@@ -57,7 +92,11 @@ a,p{
     src: url('fonts/SourceSansPro-Light.otf');
     font-weight: 300;
 }
-
+@font-face {
+    font-family: SourceSansProExtraLight;
+    src: url('fonts/SourceSansPro-ExtraLight.otf');
+    font-weight: 300;
+}
 .borderTop{
   border-bottom: 1px solid #000;
 }
@@ -83,11 +122,11 @@ a,p{
   padding: 0!important;
 }
 .dashboardWrapper .bottom{
-  position: absolute;
+  position: relative;
     bottom: 0;
     margin: 0 6vh;
     display: block;
-    width: 40vh;
+    width: 100%;
 }
 .noBorder{
   border:none;
@@ -98,4 +137,10 @@ a,p{
     margin: 0 10vh;
     padding: 0;
     font-family: SourceSansPro-Regular;
+}
+.addUserFormWrapper{
+  margin: 15px 0;
+}
+.clearBoth{
+  clear: both;
 }
