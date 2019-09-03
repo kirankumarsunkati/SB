@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Redirect } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import Test from './components/Test.js';
 import Login from './components/Login/Login.js';
@@ -21,6 +21,7 @@ function App() {
     <div className="App container-fluid">
         <Router>
             <div>
+              <Redirect from="/" to="/Login" />
             <Route path='/Login' exact strict component={Login} />
             <Route path='/RegisterUser' exact strict component={UserRegistration}/>
             <Route path='/ForgotPassword' exact strict component={ForgotPassword}/>
